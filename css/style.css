@@ -226,4 +226,75 @@ form .button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}/* Small-screen layout fixes */
+@media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header,
+  main,
+  footer {
+    padding: var(--space-medium);
+  }
+
+  nav {
+    justify-content: flex-start;
+    gap: var(--space-small);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-medium);
+    text-align: center;
+  }
+
+  .profile-photo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  th,
+  td {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  nav a {
+    padding: 6px;
+  }
+
+  main {
+    padding: 16px;
+  }
+}
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
 }
