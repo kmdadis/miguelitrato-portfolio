@@ -297,4 +297,33 @@ form .button {
 .table-wrapper {
   max-width: 100%;
   overflow-x: auto;
+}.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-medium);
+}
+
+.card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-cards {
+    gap: var(--space-small);
+  }
+
+  .card {
+    padding: var(--space-medium);
+  }
 }
