@@ -1,42 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khallel Miguel M. Dadis| Portfolio</title>
+    <title>Khallel Miguel M. Dadis | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-  <h1>My Portfolio</h1>
+        <h1>My Portfolio</h1>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-   <section>
-  <div class="hero-content">
-    <img class="profile-photo" src="images/IMG_0281.jpg" alt="Portrait of Khallel Miguel Dadis">
+        <button
+            id="theme-toggle"
+            type="button"
+            aria-pressed="false">
+            Dark Mode
+        </button>
 
-    <div>
-      <h2>Welcome</h2>
-      <p>
-        Hello! I am Khallel, a second-year Multimedia Arts student with a passion
-        for visual storytelling. Through photography, filmmaking, and graphic design,
-        I bring ideas to life and capture moments that deserve a closer look.
-        I approach each project with curiosity and attention to detail, creating
-        work that feels thoughtful, expressive, and memorable.
-      </p>
-    </div>
-  </div>
+        <button
+            id="menu-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="main-navigation">
+            Menu
+        </button>
+
+        <nav id="main-navigation" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+<section id="projects-section">
+    <h2>Featured Work</h2>
+    <div id="projects-list"></div>
 </section>
-</main>
-<footer>
-    <p>&copy; 2026 Khallel Miguel Dadis. All rights reserved.</p>
-</footer>
+    <main>
+        <section>
+            <div class="hero-content">
+                <img
+                    class="profile-photo"
+                    src="images/IMG_0281.jpg"
+                    alt="Portrait of Khallel Miguel Dadis">
+
+                <div>
+                    <h2>Welcome</h2>
+                    <p>
+                        Hello! I am Khallel, a second-year Multimedia Arts
+                        student with a passion for visual storytelling.
+                        Through photography, filmmaking, and graphic design,
+                        I bring ideas to life and capture moments that
+                        deserve a closer look. I approach each project
+                        with curiosity and attention to detail, creating
+                        work that feels thoughtful, expressive, and memorable.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khallel Miguel Dadis. All rights reserved.</p>
+    </footer>
 </body>
 </html>
