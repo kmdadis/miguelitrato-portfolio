@@ -327,3 +327,92 @@ form .button {
     padding: var(--space-medium);
   }
 }
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #8ecbff;
+}body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #8ecbff;
+}
+/* Make the menu toggle work */
+#main-navigation[hidden] {
+    display: none !important;
+}
+/* Featured Work section */
+#projects-section {
+    margin-top: 48px;
+}
+
+#projects-section > h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+#projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#projects-list .card {
+    background: linear-gradient(145deg, #252525, #171717);
+    border: 1px solid #444444;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0;
+    min-height: 140px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#projects-list .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+}
+
+#projects-list .card h3 {
+    color: var(--color-accent);
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#projects-list .card p {
+    color: #c5c5c5;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+    #projects-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact form validation messages */
+.error-message {
+    display: block;
+    color: #ff7777;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 2px solid #ff7777;
+}
+
+#form-success {
+    color: #70d6a0;
+    font-weight: bold;
+}
