@@ -145,6 +145,38 @@ To recover from a failed deployment:
 3. Upload the restored files to the correct `htdocs` directory.
 4. Test the website pages and functionality again.
 
+## AI Use
+
+I used ChatGPT to help review my HTML, CSS, JavaScript,
+Local Storage implementation, and documentation, and to
+explain code that I did not understand.
+
+I used its feedback to identify issues and evaluate
+possible changes. One suggestion I did not adopt was
+splitting the contact form validation into additional
+functions. I kept the four-field validation in one
+callback because I found the sequence easier to follow
+at this stage.
+
+During final preparation, ChatGPT identified that my
+project renderer had no matching HTML container. It
+provided a replacement HTML block to connect the
+existing JavaScript to the About page.
+
+### Personal Verification
+
+Record only checks I have actually completed:
+
+- [x] Navigation links and the menu toggle work.
+- [x] Theme switching works and persists after refresh.
+- [x] The About project card is generated from the array.
+- [x] Empty fields and invalid emails show errors.
+- [x] Valid form inputs show the demo success message.
+- [x] Layouts were checked at 375px, 768px, and 1440px.
+- [x] Invalid stored JSON falls back to default settings.
+
+The contact form validates input but does not send messages.
+
 ## Credits
 
 Created and developed by Khallel Miguel M. Dadis.
