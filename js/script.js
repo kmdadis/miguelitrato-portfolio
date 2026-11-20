@@ -11,7 +11,6 @@ const projects = [
         title: "Graphic Design",
         description: "My layouts and graphic design projects."
     }
-];
 const defaultSettings = {
     theme: "light",
     visitorName: "",
