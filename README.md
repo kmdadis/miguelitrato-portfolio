@@ -128,6 +128,14 @@ The website includes image alternative text and form labels where provided in th
 - Browser storage restrictions may affect features that depend on Local Storage.
 - HTTPS access and full accessibility compliance have not been confirmed.
 
+## Local and Live Comparison
+
+I tested the website using Live Server and the deployed InfinityFree URL.
+
+Navigation, theme switching, project cards, form validation, and layouts at 375px, 768px, and 1440px worked in both environments. No JavaScript console errors or differences in these tested features were observed.
+
+Local Storage is separate for the local and live addresses, so saved visitor settings do not transfer between them.
+
 ## Deployment and Recovery
 The website is hosted on InfinityFree using the `htdocs` directory as its website root.
 
