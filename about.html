@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Khallel Miguel M. Dadis</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    try {
+        const savedSettings = JSON.parse(
+            localStorage.getItem("portfolioSettings")
+        );
+
+        if (savedSettings && savedSettings.theme === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    } catch (error) {
+        document.documentElement.classList.remove("dark-mode");
+    }
+</script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -73,4 +86,3 @@
     </footer>
 </body>
 </html>
-```
