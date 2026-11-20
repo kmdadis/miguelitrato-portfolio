@@ -1,16 +1,10 @@
-const projects = [
+  const projects = [
     {
-        title: "Photography",
-        description: "My photography and visual storytelling work."
-    },
-    {
-        title: "Filmmaking",
-        description: "My short films and video projects."
-    },
-    {
-        title: "Graphic Design",
-        description: "My layouts and graphic design projects."
+        title: "Miguelitrato",
+        description: "My photography and film social media account where I share photographs, short films, and other visual projects."
     }
+];
+
 const defaultSettings = {
     theme: "light",
     visitorName: "",
@@ -18,7 +12,6 @@ const defaultSettings = {
 };
 
 let settings;
-
 try {
     const savedSettings = localStorage.getItem("portfolioSettings");
 
